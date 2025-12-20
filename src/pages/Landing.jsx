@@ -8,6 +8,9 @@ export default function Landing() {
     "/wanita.jpg",
   ];
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
+
   const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const [prevIndex, setPrevIndex] = useState(0);
