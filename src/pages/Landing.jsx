@@ -21,13 +21,14 @@ export default function Landing() {
 
   const [searchParams] = useSearchParams();
   const [guestName, setGuestName] = useState("");
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
   const slug = searchParams.get("to");
 
   if (!slug) return;
 
-  fetch(`http://localhost:5000/api/guest/${slug}`)
+  fetch(`${API_URL}/guest/${slug}`)
     .then((res) => res.json())
     .then((data) => {
       if (data?.name) setGuestName(data.name);
