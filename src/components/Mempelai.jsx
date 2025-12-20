@@ -31,7 +31,7 @@ export default function Mempelai() {
   }, []);
 
   return (
-    <section className="overflow-x-hidden relative flex justify-center items-center min-h-screen bg-white-100">
+    <section className="overflow-x-hidden relative flex justify-center items-center min-h-screen bg-zinc-50">
       <div className="relative w-[500px] max-w-[500px] h-auto bg-zinc-50 shadow-xl flex flex-col justify-center items-center px-6 py-12 space-y-8">
 
         <div className="grid grid-cols-1 gap-8 justify-items-center">

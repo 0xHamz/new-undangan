@@ -6,7 +6,6 @@ export default function Hero() {
   const fullName = "Hamzah & Naila";
 
   useEffect(() => {
-    // Mulai animasi teks setelah gunungan muncul
     const textTimer = setTimeout(() => setShowText(true), 800);
 
     let index = 0;

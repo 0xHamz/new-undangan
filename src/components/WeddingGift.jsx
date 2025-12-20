@@ -67,7 +67,7 @@ export default function WeddingGift() {
             <p 
             style={{ fontFamily: "Jura, sans-serif" }}
             className="text-[14px] flex justify-between items-center mt-2 font-semibold">
-              9876 5432 1098 7654
+              7206717941
             </p>
 
             <p 
@@ -89,7 +89,7 @@ export default function WeddingGift() {
           style={{ backgroundImage: "url('/bg-bank.webp')" }}
           >
             <div className="flex justify-end items-center mb-6">
-              <img src="/bri.png" alt="BRI" className="h-5 opacity-90" />
+              <img src="/dana.png" alt="BRI" className="h-5 opacity-90" />
             </div>
             <div className="flex justify-start items-center">
               <img src="/chip.png" alt="BRI" className="h-8 opacity-90" />
@@ -120,7 +120,7 @@ export default function WeddingGift() {
           style={{ backgroundImage: "url('/bg-bank.webp')" }}
           >
             <div className="flex justify-end items-center mb-6">
-              <img src="/bni.png" alt="BRI" className="h-5 opacity-90" />
+              <img src="/shopee.png" alt="BRI" className="h-5 opacity-90" />
             </div>
             <div className="flex justify-start items-center">
               <img src="/chip.png" alt="BRI" className="h-8 opacity-90" />
