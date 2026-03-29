@@ -22,7 +22,7 @@ export default function Footer() {
 
         {/* Instagram */}
         <a
-          href={`https://instagram.com/${igUsername}?text=${igMessage}`}
+          href={`https://instagram.com/${igUsername}`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-full text-xs hover:opacity-90 transition"

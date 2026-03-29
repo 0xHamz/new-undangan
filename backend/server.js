@@ -4,7 +4,7 @@ import cors from "cors";
 
 const app = express();
 
-// ⬇️ Biar frontend boleh akses backend
+// ⬇️ frontend akses backend
 app.use(cors());
 
 // ⬇️ Biar bisa baca JSON dari React
@@ -12,7 +12,7 @@ app.use(express.json());
 
 // ⬇️ Koneksi MongoDB
 mongoose.connect(
-  "mongodb+srv://undangan_db_user:39pEQSa5Rhjfzy0p@cluster0.yzydhbe.mongodb.net/undangan_db?appName=Cluster0")
+  "mongodb+srv://undangan_db_user:gzrRTXR2LPmdbMsm@cluster0.yzydhbe.mongodb.net/undangan_db?appName=Cluster0")
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB error:", err));
 
@@ -81,6 +81,6 @@ app.post("/api/guest", async (req, res) => {
 });
 
 // ==========================
-app.listen(5000, () => {
-  console.log("Backend running on http://localhost:5000");
+app.listen(4000, () => {
+  console.log("Backend running on http://localhost:4000");
 });

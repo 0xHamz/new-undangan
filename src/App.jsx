@@ -21,7 +21,7 @@ export default function App() {
 
       window.__bgMusic
         .play()
-        .then(() => console.log("🎵 iOS Safari PLAY"))
+        .then(() => console.log("🎵 PLAY"))
         .catch(() => console.log("❌ Blocked"));
 
       window.removeEventListener("touchstart", playOnFirstTouch);

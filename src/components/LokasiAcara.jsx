@@ -61,7 +61,7 @@ export default function LokasiAcara() {
         <div ref={akadRef} className={`relative w-[400px] h-[400px] rounded-lg overflow-hidden shadow-xl top-0 ${animClass(visible.akad)}`}>
           <img src="/logo2.png" alt="Lokasi" className="w-full h-full object-cover" />
           <div className="absolute inset-0 flex flex-col items-center">
-            <h2 style={{ fontFamily: "Great Vibes, sans-serif", color: "#C9A227" }} className="pt-20 text-2xl font-bold drop-shadow-md">Akad Nikah</h2>
+            <h2 style={{ fontFamily: "Great Vibes, sans-serif", color: "#C9A227" }} className="pt-20 text-2xl font-bold drop-shadow-md">Akad Nikah & Resepsi</h2>
             <img src="/logo1.png" alt="Logo Lokasi" className="w-[180px] p-1" />
             <div className="p-4 text-center leading-tight">
               <h2 style={{ fontFamily: "Great Vibes, sans-serif" }} className="text-2xl drop-shadow-md">Jum'at, 10 April 2026</h2>

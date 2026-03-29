@@ -3,12 +3,10 @@ import { useNavigate, useSearchParams  } from "react-router-dom";
 
 export default function Landing() {
   const photos = [
-    "/bg-utama.jpg",
-    "/bg-profil.jpg",
-    "/wanita.jpg",
+    "/_MG_4099.JPG",
+    "/_MG_4121.JPG",
+    "/_MG_4129.JPG",
   ];
-
-  const API_URL = import.meta.env.VITE_API_URL;
 
 
   const navigate = useNavigate();
@@ -31,7 +29,7 @@ export default function Landing() {
 
   if (!slug) return;
 
-  fetch(`${API_URL}/guest/${slug}`)
+  fetch(`${API_URL}/api/guest/${slug}`)
     .then((res) => res.json())
     .then((data) => {
       if (data?.name) setGuestName(data.name);

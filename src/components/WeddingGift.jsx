@@ -76,14 +76,14 @@ export default function WeddingGift() {
 
             {/* Tombol Copy di pojok kanan bawah */}
             <button
-              onClick={() => navigator.clipboard.writeText("9876543210987654")}
+              onClick={() => navigator.clipboard.writeText("7206717941")}
               className="absolute bottom-13 right-10 text-xs bg-gray-200 px-3 py-1 rounded-full hover:bg-gray-300 transition flex items-center gap-1 shadow"
             >
               <i class="bi bi-copy"></i> <span>Salin</span>
             </button>
 
           </div>
-          {/* KARTU BRI */}
+          {/* KARTU DANA */}
           <div
           className="w-[340px] h-[200px] rounded-xl shadow-lg bg-cover bg-center p-4 mb-4 mx-auto"
           style={{ backgroundImage: "url('/bg-bank.webp')" }}
@@ -98,7 +98,7 @@ export default function WeddingGift() {
             <p 
             style={{ fontFamily: "Jura, sans-serif" }}
             className="text-[14px] flex justify-between items-center mt-2 font-semibold">
-              9876 5432 1098 7654
+              082118270849
             </p>
 
             <p 
@@ -107,14 +107,14 @@ export default function WeddingGift() {
 
             {/* Tombol Copy di pojok kanan bawah */}
             <button
-              onClick={() => navigator.clipboard.writeText("9876543210987654")}
+              onClick={() => navigator.clipboard.writeText("082118270849")}
               className="absolute bottom-13 right-10 text-xs bg-gray-200 px-3 py-1 rounded-full hover:bg-gray-300 transition flex items-center gap-1 shadow"
             >
               <i class="bi bi-copy"></i> <span>Salin</span>
             </button>
 
           </div>
-          {/* KARTU BNI */}
+          {/* KARTU Shopeepay */}
           <div
           className="w-[340px] h-[200px] rounded-xl shadow-lg bg-cover bg-center p-4 mb-4 mx-auto"
           style={{ backgroundImage: "url('/bg-bank.webp')" }}
@@ -129,7 +129,7 @@ export default function WeddingGift() {
             <p 
             style={{ fontFamily: "Jura, sans-serif" }}
             className="text-[14px] flex justify-between items-center mt-2 font-semibold">
-              9876 5432 1098 7654
+              085759050177
             </p>
 
             <p 
@@ -138,20 +138,20 @@ export default function WeddingGift() {
 
             {/* Tombol Copy di pojok kanan bawah */}
             <button
-              onClick={() => navigator.clipboard.writeText("9876543210987654")}
+              onClick={() => navigator.clipboard.writeText("085759050177")}
               className="absolute bottom-13 right-10 text-xs bg-gray-200 px-3 py-1 rounded-full hover:bg-gray-300 transition flex items-center gap-1 shadow"
             >
               <i class="bi bi-copy"></i> <span>Salin</span>
             </button>
 
           </div>
-          {/* KARTU ALAMAT */}
+          {/* KARTU Seabank */}
           <div
           className="w-[340px] h-[200px] rounded-xl shadow-lg bg-cover bg-center p-4 mb-4 mx-auto"
           style={{ backgroundImage: "url('/bg-bank.webp')" }}
           >
             <div className="flex justify-end items-center mb-6">
-              <img src="/bni.png" alt="BRI" className="h-5 opacity-90" />
+              <img src="/seabank.png" alt="BRI" className="h-5 opacity-90" />
             </div>
             <div className="flex justify-start items-center">
               <img src="/chip.png" alt="BRI" className="h-8 opacity-90" />
@@ -160,7 +160,7 @@ export default function WeddingGift() {
             <p 
             style={{ fontFamily: "Jura, sans-serif" }}
             className="text-[14px] flex justify-between items-center mt-2 font-semibold">
-              9876 5432 1098 7654
+              901824825558
             </p>
 
             <p 
@@ -169,13 +169,49 @@ export default function WeddingGift() {
 
             {/* Tombol Copy di pojok kanan bawah */}
             <button
-              onClick={() => navigator.clipboard.writeText("9876543210987654")}
-              className="absolute bottom-15 right-14 text-xs bg-gray-200 px-3 py-1 rounded-full hover:bg-gray-300 transition flex items-center gap-1 shadow"
+              onClick={() => navigator.clipboard.writeText("901824825558")}
+              className="absolute bottom-13 right-10 text-xs bg-gray-200 px-3 py-1 rounded-full hover:bg-gray-300 transition flex items-center gap-1 shadow"
             >
               <i class="bi bi-copy"></i> <span>Salin</span>
             </button>
 
           </div>
+          <div className="w-full max-w-md border border-zinc-200 rounded-lg p-6 text-center bg-white shadow-sm">
+            <h3 className="text-sm font-semibold tracking-wide text-gray-700 mb-3">
+              Kirim Hadiah Fisik
+            </h3>
+
+            <p className="text-xs text-gray-500 leading-relaxed">
+              Tanpa mengurangi rasa hormat, bagi Bapak/Ibu/Saudara/i yang berkenan
+              mengirimkan tanda kasih berupa hadiah fisik, dapat dikirimkan ke alamat
+              berikut:
+            </p>
+
+            {/* Alamat */}
+            <div
+              id="alamat-hadiah"
+              className="mt-4 text-xs text-gray-700 font-medium leading-relaxed"
+            >
+              Jl. Astana Japura No.16, Japura Kidul, Kec. Astanajapura<br />
+              Kabupaten Cirebon, Jawa Barat 45181
+            </div>
+            {/* Tombol Salin */}
+            <button
+              onClick={() => {
+                const alamat = document.getElementById("alamat-hadiah")?.innerText;
+                if (alamat) {
+                  navigator.clipboard.writeText(alamat);
+                }
+              }}
+              className="mt-5 inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold
+                        border border-zinc-300 rounded-full text-gray-700
+                        hover:bg-zinc-100 transition"
+            >
+              <i className="bi bi-copy"></i>
+              Salin Alamat
+            </button>
+          </div>
+
         </div>
             
         {/* Wishes */}
