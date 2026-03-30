@@ -27,16 +27,24 @@ export default function Landing() {
   useEffect(() => {
   const slug = searchParams.get("to");
 
-  if (!slug) return;
+  console.log("SLUG:", slug);
+
+  if (!slug) {
+    setGuestName("Tamu Undangan");
+    return;
+  }
 
   fetch(`${API_URL}/api/guest/${slug}`)
     .then((res) => res.json())
     .then((data) => {
-      if (data?.name) setGuestName(data.name);
-    });
-}, [searchParams]);
+      console.log("DATA:", data);
 
-
+      if (data?.name) {
+        setGuestName(data.name);
+      }
+    })
+    .catch((err) => console.error("ERROR:", err));
+}, [searchParams, API_URL]);
 
   // Animasi teks
   useEffect(() => {
