@@ -22,7 +22,7 @@ export default function Landing() {
 
   const [searchParams] = useSearchParams();
   const [guestName, setGuestName] = useState("");
-  const API_URL = "https://backend-undangan-production-f09a.up.railway.app/";
+  const API_URL = "https://backend-undangan-production-f09a.up.railway.app";
 
   useEffect(() => {
   const slug = searchParams.get("to");
