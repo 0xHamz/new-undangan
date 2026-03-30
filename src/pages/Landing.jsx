@@ -27,23 +27,13 @@ export default function Landing() {
   useEffect(() => {
   const slug = searchParams.get("to");
 
-  console.log("SLUG:", slug);
-
-  if (!slug) {
-    setGuestName("Tamu Undangan");
-    return;
-  }
+  if (!slug) return;
 
   fetch(`${API_URL}/api/guest/${slug}`)
     .then((res) => res.json())
     .then((data) => {
-      console.log("DATA:", data);
-
-      if (data?.name) {
-        setGuestName(data.name);
-      }
-    })
-    .catch((err) => console.error(err));
+      if (data?.name) setGuestName(data.name);
+    });
 }, [searchParams]);
 
 
