@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = "https://backend-undangan-production-f09a.up.railway.app/";
 const FRONTEND_URL = import.meta.env.VITE_FRONTEND_URL;
 
 export default function AddGuest() {
