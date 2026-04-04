@@ -233,7 +233,7 @@ export default function WeddingGift() {
               e.preventDefault();
               const nama = e.target.nama.value.trim();
               const pesan = e.target.pesan.value.trim();
-              const hadir = e.target.hadir.value === "Hadir"; // konversi ke boolean
+              const hadir = e.target.hadir.value === "Hadir" ? true : false; // konversi ke boolean
 
               if (!nama || !pesan) return;
 
@@ -310,7 +310,7 @@ export default function WeddingGift() {
                     })}
                   </p>
                   <p className="text-xs mt-1">
-                    Kehadiran: <span className="font-semibold">{w.hadir ? "Hadir" : "Tidak Hadir"}</span>
+                    Kehadiran: <span className="font-semibold">{w.hadir === true ? "Hadir" : "Tidak Hadir"}</span>
                   </p>
                 </div>
               ))}
