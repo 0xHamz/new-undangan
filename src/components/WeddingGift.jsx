@@ -300,7 +300,14 @@ export default function WeddingGift() {
                   <p className="text-sm font-semibold text-[#0f5132]">{w.nama}</p>
                   <p className="text-sm text-gray-700">{w.pesan}</p>
                   <p className="text-[10px] text-gray-500 mt-1">
-                    {new Date(w.created_at).toLocaleString("id-ID")}
+                    {new Date(w.created_at).toLocaleString("id-ID", {
+                      timeZone: "Asia/Jakarta",
+                      day: "2-digit",
+                      month: "short",
+                      year: "numeric",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                    })}
                   </p>
                   <p className="text-xs mt-1">
                     Kehadiran: <span className="font-semibold">{w.hadir ? "Hadir" : "Tidak Hadir"}</span>
