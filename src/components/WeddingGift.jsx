@@ -15,7 +15,7 @@ export default function WeddingGift() {
     const fetchWishes = async () => {
       const { data, error } = await supabase
         .from("wishes")
-        .select("nama, pesan, created_at")
+        .select("nama, pesan, hadir, created_at")
         .order("created_at", { ascending: false });
 
       if (!error) setWishes(data);
